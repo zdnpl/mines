@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minesweeper with Bet and Coins</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Minesweeper with Bet and Coins</h1>
+    <p>Coins: <span id="coin-count">2000</span></p>
+    <label for="bet-amount">Bet Amount (10-1000):</label>
+    <input type="number" id="bet-amount" name="bet-amount" min="10" max="1000" value="10" />
+    <button id="max-bet">Max Bet</button>
+    <button id="start-game">Start Game</button>
+    <button id="end-game" style="display: none">End Game</button>
+    <button id="stop-game" style="display: none">Stop Game</button>
+    <div id="bet-display"></div>
+    <p id="current-multiply">Current Multiply: 0</p>
+    <div id="game-board"></div>
+    <p id="message"></p>
+    <div class="slider-container">
+      <label for="mines-slider">Mines (1-24):</label>
+      <input type="range" id="mines-slider" name="mines-slider" min="1" max="24" value="1" />
+      <span id="mines-value">1</span>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

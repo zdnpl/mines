@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(5, 40px);
+  gap: 2px;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cell.bomb.exploded {
+  background-color: red;
+}
+
+.cell.bomb.revealed {
+  background-color: #f00;
+}
+
+.cell.open {
+  background-color: #bbb;
+  cursor: default;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: green;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#end-game {
+  background-color: red;
+  color: white;
+}
+
+#stop-game {
+  background-color: #333;
+  color: white;
+}
+
+.slider-container {
+  margin-top: 10px;
+}
+
+.slider-container label {
+  display: block;
+}
+
+.slider-container input[type="range"] {
+  width: 100%;
+}
+
+.slider-container span {
+  display: inline-block;
+  margin-left: 10px;
+}
